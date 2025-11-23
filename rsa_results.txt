@@ -1,0 +1,129 @@
+
+=== Prime Generation (512-bit) ===
+Minimum clock cycles: 2767362
+Maximum clock cycles: 55002922
+Average clock cycles: 9725267.14
+
+=== Modulus and Totient (512-bit) ===
+Modulus (N = p*q) clock cycles: 520
+Totient (phi(N)) clock cycles: 936
+
+=== Key Generation (512-bit) ===
+Clock cycles: 10348
+
+=== Encryption/Decryption (512-bit) ===
+Clock cycles: 1096498
+Decryption verification: Success
+
+=== Sizes (Bit Lengths) for 512-bit Primes ===
+Modulus N: 1024 bits
+Public exponent e: 17 bits
+Private exponent d: 1024 bits
+Message m: 1022 bits
+Ciphertext c: 1016 bits
+
+=== Theoretical Time and Memory Complexity (k = bit_size of primes, N ~ 2k bits) ===
+Prime Generation (per prime):
+  Time: O(k^4) expected (probabilistic primality testing)
+  Memory: O(k) for p, q, and temporary GMP variables
+Modulus (N = p*q):
+  Time: O(k^2) for multiplication of two k-bit numbers
+  Memory: O(k) for N and temporary GMP variables
+Totient (phi(N) = (p-1)*(q-1)):
+  Time: O(k^2) for subtraction and multiplication
+  Memory: O(k) for phi_N and temporary GMP variables
+Key Generation (invert):
+  Time: O(k^3) for extended Euclidean algorithm
+  Memory: O(k) for d and temporary GMP variables
+Encryption (m^e mod N):
+  Time: O(k^2) since e is small (17 bits)
+  Memory: O(k) for c and temporary GMP variables
+Decryption (c^d mod N):
+  Time: O(k^3) since d is large (~2k bits)
+  Memory: O(k) for m_prime and temporary GMP variables
+
+=== Prime Generation (768-bit) ===
+Minimum clock cycles: 8079838
+Maximum clock cycles: 201959238
+Average clock cycles: 32773457.22
+
+=== Modulus and Totient (768-bit) ===
+Modulus (N = p*q) clock cycles: 832
+Totient (phi(N)) clock cycles: 1144
+
+=== Key Generation (768-bit) ===
+Clock cycles: 11804
+
+=== Encryption/Decryption (768-bit) ===
+Clock cycles: 3866330
+Decryption verification: Success
+
+=== Sizes (Bit Lengths) for 768-bit Primes ===
+Modulus N: 1535 bits
+Public exponent e: 17 bits
+Private exponent d: 1529 bits
+Message m: 1023 bits
+Ciphertext c: 1534 bits
+
+=== Theoretical Time and Memory Complexity (k = bit_size of primes, N ~ 2k bits) ===
+Prime Generation (per prime):
+  Time: O(k^4) expected (probabilistic primality testing)
+  Memory: O(k) for p, q, and temporary GMP variables
+Modulus (N = p*q):
+  Time: O(k^2) for multiplication of two k-bit numbers
+  Memory: O(k) for N and temporary GMP variables
+Totient (phi(N) = (p-1)*(q-1)):
+  Time: O(k^2) for subtraction and multiplication
+  Memory: O(k) for phi_N and temporary GMP variables
+Key Generation (invert):
+  Time: O(k^3) for extended Euclidean algorithm
+  Memory: O(k) for d and temporary GMP variables
+Encryption (m^e mod N):
+  Time: O(k^2) since e is small (17 bits)
+  Memory: O(k) for c and temporary GMP variables
+Decryption (c^d mod N):
+  Time: O(k^3) since d is large (~2k bits)
+  Memory: O(k) for m_prime and temporary GMP variables
+
+=== Prime Generation (1024-bit) ===
+Minimum clock cycles: 16232190
+Maximum clock cycles: 479285326
+Average clock cycles: 84965783.88
+
+=== Modulus and Totient (1024-bit) ===
+Modulus (N = p*q) clock cycles: 1534
+Totient (phi(N)) clock cycles: 1196
+
+=== Key Generation (1024-bit) ===
+Clock cycles: 9490
+
+=== Encryption/Decryption (1024-bit) ===
+Clock cycles: 7795528
+Decryption verification: Success
+
+=== Sizes (Bit Lengths) for 1024-bit Primes ===
+Modulus N: 2048 bits
+Public exponent e: 17 bits
+Private exponent d: 2042 bits
+Message m: 1020 bits
+Ciphertext c: 2047 bits
+
+=== Theoretical Time and Memory Complexity (k = bit_size of primes, N ~ 2k bits) ===
+Prime Generation (per prime):
+  Time: O(k^4) expected (probabilistic primality testing)
+  Memory: O(k) for p, q, and temporary GMP variables
+Modulus (N = p*q):
+  Time: O(k^2) for multiplication of two k-bit numbers
+  Memory: O(k) for N and temporary GMP variables
+Totient (phi(N) = (p-1)*(q-1)):
+  Time: O(k^2) for subtraction and multiplication
+  Memory: O(k) for phi_N and temporary GMP variables
+Key Generation (invert):
+  Time: O(k^3) for extended Euclidean algorithm
+  Memory: O(k) for d and temporary GMP variables
+Encryption (m^e mod N):
+  Time: O(k^2) since e is small (17 bits)
+  Memory: O(k) for c and temporary GMP variables
+Decryption (c^d mod N):
+  Time: O(k^3) since d is large (~2k bits)
+  Memory: O(k) for m_prime and temporary GMP variables
